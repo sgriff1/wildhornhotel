@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Wildhorn Valley Hotel & Spa | Contact</title>
+        <meta name="author" content="Shannon Griffin">
+        <meta name="description" content="A site for Wildhorn Valley Hotel and Spa located in the Swiss Alps that offers a variety of services to its guests">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- Google Fonts Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Mate+SC&family=Metal&family=Quintessential&display=swap" rel="stylesheet">
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!-- Header Grid Link H1 Set up Nav Links and Add Hero Image- same as index -->
+        <header class="header-grid">
+            <h1><a href="index.html">Wildhorn Valley</a></h1>
+            <h2>Hotel & Spa</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/swiss-valley.jpg" alt="Pine Trees covering green hills with snowy mountains behind them and a blue sky with clouds in the background" width="1440" height="560">
+        </header>
+
+        <main>
+            <!-- Used a DIV in order to display items properly in Container -->
+            <!-- Used section ids to group content for styling purposes -->
+            <!-- Added Image-->
+            <div class="container">
+                <section id="contact">
+                    <section id="paragraph">
+                        <h2>Contact Us</h2>
+                        <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required inputs are marked with a <span class="required">*</span></p>
+                    </section>
+                    <img src="images/swiss-peak.jpg" alt="A river disappears into dark green pine trees while a snowy peak is centered behind them with a light blue sky in the background" width="350" height="455"> 
+                </section>
+                
+                <!-- Set Up the Form and the types/labels for required information -->
+                <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+
+                    <label for="full-name">Full Name (first and last) <span class="required">*</span></label>
+                    <input type="text" name="full-name" id="full-name" required>
+
+                    <label for="my-email">Email Address (address@site.com): <span class="required">*</span></label>
+                    <input type="email" name="my-email" id="my-email" required>
+
+                    <label for="my-phone">Phone Number (include area code): <span class="required">*</span></label>
+                    <input type="tel" name="my-phone" id="my-phone" required>
+
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend>
+        
+                        <input type="radio" name="contact-pref" id="pref-email" value="prefer-email" required checked>
+                        <label for="pref-email">Email</label>
+                    
+                        <input type="radio" name="contact-pref" id="pref-phone" value="prefer-phone">
+                        <label for="pref-phone">Phone</label>   
+                    </fieldset>
+
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" required></textarea>
+
+                    <input type="submit" name="my-submit" id="my-submit" value="Submit">
+                </form>
+            </div>          
+        </main>
+
+        <!-- Footer Styles with class for second paragraph to size smaller in CSS styles (same as index)-->
+        <footer>
+            <p>Copyright &copy;2023 - Wildhorn Valley Hotel & Spa</p>
+            <p class="edpurposes">This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
